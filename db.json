@@ -2,19 +2,6 @@
   "projects": [
     {
       "project": {
-        "name": "3423",
-        "budget": "55",
-        "category": {
-          "id": "1",
-          "name": "Infra"
-        },
-        "cost": 0,
-        "services": []
-      },
-      "id": 2
-    },
-    {
-      "project": {
         "name": "projeto infra",
         "budget": "10000",
         "category": {
@@ -24,7 +11,7 @@
         "cost": 0,
         "services": []
       },
-      "id": 3
+      "id": 1
     },
     {
       "project": {
@@ -37,7 +24,7 @@
         "cost": 0,
         "services": []
       },
-      "id": 4
+      "id": 2
     },
     {
       "project": {
@@ -46,6 +33,32 @@
         "category": {
           "id": "3",
           "name": "Design"
+        },
+        "cost": 0,
+        "services": []
+      },
+      "id": 3
+    },
+    {
+      "project": {
+        "name": "1111",
+        "budget": "222",
+        "category": {
+          "id": "3",
+          "name": "Design"
+        },
+        "cost": 0,
+        "services": []
+      },
+      "id": 4
+    },
+    {
+      "project": {
+        "name": "testes",
+        "budget": "1111",
+        "category": {
+          "id": "2",
+          "name": "Desenvolvimento"
         },
         "cost": 0,
         "services": []

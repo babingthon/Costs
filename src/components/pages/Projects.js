@@ -22,6 +22,7 @@ function Projects() {
       async function fetchData() {
         let request = await api.loadProjects();
         setProjects(request.data);
+        console.log(projects)
         setRemoveLoading(true);
       }
       fetchData();

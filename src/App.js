@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {useState, useEffect} from "react"
 
 import Home from './components/pages/Home';
 import Contact from "./components/pages/Contact";
@@ -12,6 +13,14 @@ import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 
 function App() {
+
+  const [year, setYear] = useState('');
+
+  useEffect(() => {
+    const date = new Date();
+    setYear(date.getFullYear());
+  }, [year]);
+
   return (
     <Router>
       <Navbar />
@@ -25,7 +34,7 @@ function App() {
           <Route path="/project/:id" element={<Project />} />
         </Routes>
       </Container>
-      <Footer />
+      <Footer year={year}/>
     </Router>
   );
 }

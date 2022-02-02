@@ -2,8 +2,7 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 import styles from './Footer.module.css'
 
-
-function Footer() {
+function Footer({ year }) {
     return (
       <footer className={styles.footer}>
         <ul className={styles.social_list}>
@@ -18,7 +17,7 @@ function Footer() {
           </li>
             </ul>
             <p className={styles.copy_right}>
-                <span>Costs</span> &copy; 2021
+                <span>Costs</span> &copy; {year}
             </p>
       </footer>
     );

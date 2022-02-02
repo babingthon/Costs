@@ -49,12 +49,24 @@ export const api = {
   loadProject: async (id) => {
     try {
       let response = await axios.get(`http://localhost:5000/projects/${id}`, {
-        headers: { contentType: "application/json" },
+        headers: { "Content-Type": "application/json" },
       });
 
       return response;
     } catch (err) {
-      alert("Error loading projects: " + err);
+      alert("Error loading project: " + err);
+    }
+  },
+  editProject: async (project) => {
+    try {
+      let response = await axios.get(`http://localhost:5000/projects/${project.id}`, {
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(project)
+      });
+
+      return response;
+    } catch (err) {
+      alert("Error editing project: " + err);
     }
   },
 };
