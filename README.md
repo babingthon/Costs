@@ -2,6 +2,8 @@
 
 <p align="center">Sistema pra gerenciamento de custo de projetos</p>
 
+### Projeto realizado a partir do curso de [React](https://www.youtube.com/playlist?list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO) do Matheus Battisti - Hora de Codar
+
 <h4 align="center"> ✅ Finalizado ✅ </h4>
 
 ### Pré-requisitos
