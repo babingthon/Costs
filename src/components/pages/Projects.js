@@ -22,7 +22,6 @@ function Projects() {
       async function fetchData() {
         let request = await api.loadProjects();
         setProjects(request.data);
-        console.log(projects)
         setRemoveLoading(true);
       }
       fetchData();
@@ -54,13 +53,13 @@ function Projects() {
       {projectMessage && <Message type="success" msg={projectMessage} />}
       <Container customClass="start">
         {projects.length > 0 &&
-          projects.map((item, index) => (
+          projects.map((project) => (
             <ProjectCard
-              id={item.id}
-              name={item.project.name}
-              budget={item.project.budget}
-              category={item.project.category.name}
-              key={index}
+              id={project.id}
+              name={project.name}
+              budget={project.budget}
+              category={project.category.name}
+              key={project.id}
               handleRemove={removeProject}
             />
           ))}
